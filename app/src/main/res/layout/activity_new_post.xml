@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.NewPost">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginLeft="10dp"
+            android:textSize="28sp"
+            android:background="#00000000"
+            android:text="取消" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:text="分享好心情" />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:textSize="28sp"
+            android:background="#00000000"
+            android:text="發表"
+            android:layout_marginRight="10dp"/>
+    </FrameLayout>
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:hint="分享新事情"
+        android:background="@color/white"
+        android:gravity="start"
+        android:padding="5dp"></EditText>
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/flowlayout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flChildSpacing="5dp"
+        app:flChildSpacingForLastRow="5dp"
+        app:flRowSpacing="8dp">
+
+
+        <Button
+            android:id="@+id/b10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/photo"
+            />
+    </com.nex3z.flowlayout.FlowLayout>
+</LinearLayout>
